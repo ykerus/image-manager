@@ -3,6 +3,9 @@ GENERAL
 This program can be used to detect image duplicates and/or highly similar 
 images in specified folders and subfolders on your computer. These images
 can then be iterated through and removed if desired.
+Note: This program has been developed and tested exlusively on a Mac. Some
+problems may occur for systems that have their trash bin located elsewhere
+than on Mac (~/.Trash).
 
 GETTING STARTED
 
