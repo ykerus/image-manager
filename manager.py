@@ -147,7 +147,7 @@ class ImageManager():
         plt.title("[B] in '"+fname2.split("/")[-2]+"'", **self.csfont, color="white" )
         plt.imshow(img2)
         plt.axis("off")
-        self.move_figure(f, 0, 0)
+        # self.move_figure(f, 0, 0)
         plt.show(block=False)
     
     def remove(self, fname):
