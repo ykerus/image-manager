@@ -14,7 +14,7 @@ class UserMenu():
         self.loadoptions = ["Load from disk", "Re-process"]
         self.imageManager = imageManager
         self.directory, self.threshold = None, None
-        self.deleted = set()
+        self.deleted, self.ignore = set(), set()
         
     def print_stats(self, clear=True):
         if clear:
@@ -129,7 +129,8 @@ class UserMenu():
                 input("\n>> ENTER")
             else:
                 for fname1, fname2 in list(self.imageManager.duplicates):
-                    if fname1 not in self.deleted and fname2 not in self.deleted:
+                    if fname1 not in self.deleted and fname2 not in self.deleted and\
+                                                (fname1, fname2) not in self.ignore:
                         os.system("clear")
                         self.print_stats()
                         print("\n> Delete [A/B] (ENTER = ignore)")
@@ -144,6 +145,8 @@ class UserMenu():
                             self.deleted.add(fremove)
                         elif delete == "q":
                             break
+                        else:
+                            self.ignore.add((fname1, fname2))
                 self.imageManager.write(self.directory)
             self.submenu("duplicates", clear=True)
         
