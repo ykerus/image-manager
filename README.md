@@ -1,5 +1,5 @@
 ## Author
-- Yke Rusticus: `yke_rusticus@gmail.com`
+- Yke Rusticus: `yke.rusticus@gmail.com`
 - MSc Artificial Intelligence: University of Amsterdam
 ## GENERAL 
 
