@@ -12,7 +12,7 @@ than on Mac (`~/.Trash`).
 
 ## Getting started
 
-1. Put folder `ImageManager` next to folder(s) you want to check for duplicates.
+1. Put folder `image-manager` next to folder(s) you want to check for duplicates.
 2. Enter folder in terminal.
 3. Install requirements:
     <pre><code>pip install -r requirements.txt</code></pre>
