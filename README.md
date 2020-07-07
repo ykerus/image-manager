@@ -1,7 +1,7 @@
 ## Author
 - Yke Rusticus: `yke.rusticus@gmail.com`
 - MSc Artificial Intelligence: University of Amsterdam
-## GENERAL 
+## General
 
 This program can be used to detect image duplicates and/or highly similar 
 images in specified folders and subfolders on your computer. These images
@@ -10,7 +10,7 @@ Note: This program has been developed and tested exlusively on a Mac. Some
 problems may occur for systems that have their trash bin located elsewhere
 than on Mac (`~/.Trash`).
 
-## GETTING STARTED
+## Getting started
 
 1. Put folder `ImageManager` next to folder(s) you want to check for duplicates.
 2. Enter folder in terminal.
@@ -19,7 +19,7 @@ than on Mac (`~/.Trash`).
 4. Run main.py:
     <pre><code>python main.py</code></pre>
 
-## HELP
+## Help
 
 ### Don’t know which directories are visible for the program?
   - Enter `ls` in the directory loader.
